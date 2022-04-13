@@ -1,0 +1,11 @@
+fastapi
+numpy
+pandas
+fastai
+fastbook
+uvicorn 
+python-multipart 
+graphviz
+aiofiles
+voila
+starlette

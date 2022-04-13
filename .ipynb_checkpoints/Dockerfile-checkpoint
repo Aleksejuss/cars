@@ -1,0 +1,17 @@
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8
+
+ENV SERVER_ROOT_PATH=/opt/server
+
+WORKDIR $SERVER_ROOT_PATH
+
+COPY requirements.txt ${SERVER_ROOT_PATH}/requirements.txt
+COPY ./app ${SERVER_ROOT_PATH}/app
+COPY ./static ${SERVER_ROOT_PATH}/static
+
+RUN pip install -r requirements.txt
+
+EXPOSE 8080
+
+CMD ["uvicorn", "app.controller:app","--host", "0.0.0.0", "--port", "8080"]
+
+
