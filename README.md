@@ -24,5 +24,7 @@ The purpose of this model to make clasiffier for those two car brands in order t
 # Result on test dataset
 
 ![](results/Report.PNG)
+
+
 ![](results/Matrix.PNG)
 
