@@ -12,6 +12,7 @@ The purpose of this model to make clasiffier for those two car brands in order t
 - End_user.ipyng - notebook which shows how model is working by uploading images
 - ./static - model 
 - ./app - end user app with fastapi
+- .results - result on test dataset
 - requirements.txt - all needed librarys for End_user.ipyng and fastapi app
 
 # How to use fastapi app
@@ -19,4 +20,9 @@ The purpose of this model to make clasiffier for those two car brands in order t
 2. install requirements file
 3. write down in terminal uvicorn app.controller:app --reload
 4. write down in browser http://127.0.0.1:8000/docs and press predict, try out, choose image and excecute. Below you will see predicted class: Swift or Wagonr.
+
+# Result on test dataset
+
+![](results/Report.PNG)
+![](result/Matrix.PNG)
 
